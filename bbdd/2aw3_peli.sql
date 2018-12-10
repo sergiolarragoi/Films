@@ -28,11 +28,12 @@ DELIMITER $$
 --
 -- Procedimientos
 --
-CREATE DEFINER=`root`@`localhost` PROCEDURE `spAllDirectors` ()  NO SQL
+CREATE DEFINER=`root`@`localhost` PROCEDURE `spAllFilms` ()  NO SQL
 SELECT
-    *
+    idPelicula,
+    TituloPelicula
 FROM
-    directores$$
+    peliculas$$
 
 DELIMITER ;
 
